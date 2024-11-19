@@ -1,6 +1,7 @@
 {
     "name": ":vendor_slug/:package_slug",
     "description": ":package_description",
+    "version": "1.0.0",
     "license": "MIT",
     "type": "returfs-marketplace",
     "authors": [
@@ -33,8 +34,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "VendorName\\Skeleton\\Tests\\": "tests/"
         }
     },
     "scripts": {
