@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Http\Controllers;
+namespace <%= vendorNamespace %>\<%= className %>\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

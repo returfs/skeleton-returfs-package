@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace <%= vendorNamespace %>\<%= className %>;
 
 use Illuminate\Support\ServiceProvider;
 

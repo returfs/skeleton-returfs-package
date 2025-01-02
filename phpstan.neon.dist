@@ -1,12 +1,17 @@
 includes:
-    - phpstan-baseline.neon
-
+    - ./vendor/nunomaduro/larastan/extension.neon
 parameters:
-    level: 5
+    level: 9
     paths:
         - src
         - config
         - database
-    tmpDir: build/phpstan
-    checkOctaneCompatibility: true
-    checkModelProperties: true
+    ignoreErrors:
+        - '#Method App\\Http\\Controllers\\(.*)::__invoke\(\) has no return type specified.#'
+        - '#Method App\\(.*)::handle\(\) has no return type specified.#'
+    tmpDir:
+        build/phpstan
+    checkOctaneCompatibility:
+        true
+    checkModelProperties:
+        true

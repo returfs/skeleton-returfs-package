@@ -1,11 +1,11 @@
 <?php
 
-namespace VendorName\Skeleton\Http\Controllers;
+namespace <%= vendorNamespace %>\<%= className %>\Http\Controllers;
 
-class ShowSkeletonController extends Controller
+class Show<%= className %>Controller extends Controller
 {
     public function __invoke()
     {
-        return 'Hello from Skeleton Controller';
+        return 'Hello from <%= className %> Controller';
     }
 }
