@@ -1,5 +1,5 @@
 {
-  "name": "<%= vendorSlug %>_<%= packageSlug %>",
+  "name": "<%= vendorSlug %>_<%= extensionSlug %>",
   "description": "<%= description %>",
   "version": "1.0.0",
   "license": "MIT",
