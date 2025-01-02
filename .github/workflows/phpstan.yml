@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '**.php'
-      - 'phpstan.neon.dist'
+      - 'phpstan.neon'
       - '.github/workflows/phpstan.yml'
 
 jobs:
@@ -22,7 +22,11 @@ jobs:
           coverage: none
 
       - name: Install composer dependencies
-        uses: ramsey/composer-install@v3
+        uses: badasukerubin/composer-install@v3
+        with:
+          custom-composer-filename: 'composer-gh-actions'
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.COMPOSER_AUTH }}"}}'
 
       - name: Run PHPStan
         run: ./vendor/bin/phpstan --error-format=github
