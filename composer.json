@@ -28,13 +28,13 @@
   },
   "autoload": {
     "psr-4": {
-      "<%= vendorNamespace %>\\<%= className %>\\": "src/",
-      "<%= vendorNamespace %>\\<%= className %>\\Database\\Factories\\": "database/factories/"
+      "<%= vendorComposerNamespace %>\\<%= className %>\\": "src/",
+      "<%= vendorComposerNamespace %>\\<%= className %>\\Database\\Factories\\": "database/factories/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "<%= vendorNamespace %>\\<%= className %>\\Tests\\": "tests/"
+      "<%= vendorComposerNamespace %>\\<%= className %>\\Tests\\": "tests/"
     }
   },
   "scripts": {
@@ -85,7 +85,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "<%= vendorNamespace %>\\<%= className %>\\<%= className %>ServiceProvider"
+        "<%= vendorComposerNamespace %>\\<%= className %>\\<%= className %>ServiceProvider"
       ]
     }
   },

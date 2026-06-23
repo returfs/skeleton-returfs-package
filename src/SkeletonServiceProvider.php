@@ -4,7 +4,7 @@ namespace <%= vendorNamespace %>\<%= className %>;
 
 use Illuminate\Support\ServiceProvider;
 
-class SkeletonServiceProvider extends ServiceProvider
+class <%= className %>ServiceProvider extends ServiceProvider
 {
     public function boot()
     {

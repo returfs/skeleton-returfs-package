@@ -3,21 +3,23 @@ import {
   ColorKey,
   Entrance,
   PortalSystemProps,
+  ResourceSettingsData,
 } from '@returfs/shared-external-react';
 
-import '@pqina/pintura/pintura.css';
-
 export default memo(function Extension({
-  item,
+  resourceItem,
   resourceRoute,
-  settings,
-  onUpdate,
+  resourceSettings,
+  resourceUser,
 }: PortalSystemProps) {
-  const themeColor = ColorKey.Gray;
-
   return (
     <StrictMode>
-      <Entrance themeColor={themeColor} className="h-screen w-full"></Entrance>
+      <Entrance
+        themeColor={
+          resourceSettings?.[ResourceSettingsData.ThemeColor] as ColorKey
+        }
+        className="h-screen w-full"
+      ></Entrance>
     </StrictMode>
   );
 });
